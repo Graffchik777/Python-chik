@@ -8,3 +8,4 @@ fuc_al = 1
 for i in range(1, num+1): 
     fuc_al *= i
     print(fuc_al)
+    
