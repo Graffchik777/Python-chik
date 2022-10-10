@@ -4,8 +4,21 @@
 # 0,56 -> 11
 
 
-n = int(input('Введите какоенить число: '))
+n = input('Введите какоенить число: ')
 
-print(sum(map(int,str(n))))
+# #print(int(sum(map(float, str(n)))))
 
+# print(int(sum(map(float, list(float(input(n)))))))
 
+#n = 12.3
+# число в строку
+str = str(n)
+# производим замену десятичного разделителя
+str = str.replace('.', '')
+# строку с числом в список строк с цифрами
+#first = list(str)
+# преобразовываем каждый элемент полученного
+# списка строк с цифрами в список целых чисел
+#list = map(int, first)
+# применяем функцию `sum()`
+print(sum(map(int, list(str))))
