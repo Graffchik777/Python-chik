@@ -1,8 +1,14 @@
 # Задача №32: Задайте последовательность чисел. 
 # Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
 
-lst = list(map(int, input("Создайте список :\n").split()))
-print(f"Исходный список: {lst}")
-new_list = []
-[new_list.append(i) for i in lst if i not in new_list]
-print(f"Список не дублирующихся элементов: {new_list}")
+numbers = list(map(int, input(f"Создайте список через пробел: \n").split()))
+def unical_old(numbers):
+    unique = []
+    for number in numbers:
+        if number in unique:
+            continue
+        else:
+            unique.append(number)
+    return unique
+
+print(unical_old(numbers))
