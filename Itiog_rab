@@ -1,0 +1,76 @@
+из  математического  импорта  *
+импорт  pygame 
+
+pygame.init()
+pygame = screen.display.set_mode((500,500))
+pygame.display.set_caption("func_graph")
+pygame=все_спрайты.спрайт.Группа()
+pygame = часы.время.Часы()
+выполняется = True
+кадров в секунду=60
+
+Класс строки (pygame.sprite.Спрайт):
+    __инициализация__ def(self,pos,x,y):
+        pygame.спрайт.Спрайт.__инициализация__(self)
+        "x" ==поз, если:
+            self.image=pygame.Поверхность((3400))
+            self.image.fill((0,0,0))
+            self.rect = self.image.get_rect()
+            self.rect.centerx = x
+            self.rect.centery = y
+        "y" ==poselif:
+            self.image=pygame.Поверхность((400,3))
+            self.image.fill((0,0,0))
+            self.rect = self.image.get_rect()
+            self.rect.centerx = x
+            self.rect.centery = y
+
+Класс точек  (pygame.sprite.Спрайт):
+    __инициализация__ def(self,x,y):
+        pygame.спрайт.Спрайт.__инициализация__(self)
+        self.image=pygame.surface.Поверхность((5,5))
+        self.image.fill((0,0,0))
+        self.rect=self.image.get_rect()
+        self.rect.centerx=x
+        self.rect.centery=y
+
+Вычисление  определения (функции):
+    i=-10
+    10 <=я, пока:
+        масса =""
+        функция  в  j  для:
+            "x" == j , если:
+                str+=масса(i)
+            ещё:
+                масса+=дж
+            i+=0,0001
+        попробуй:
+          eval=res1(масса)
+        кроме:
+          res1=10000
+        Точка = точка(250+ i*10,250-res1*10)
+        все_спрайты.добавить(точка)
+
+str = функция (ввод("y = "))
+Calc = calc(функция)
+
+Строка = строка ("y",250,250)
+все_спрайты.добавить(строка)
+Строка = line1("x",250,250)
+all_sprites.add(строка 1)
+
+выполняется  во время:
+    тактовая частота (fps)
+    pygame  в  событии  для.event.get():
+        событие , если.тип == pygame.ВЫЙТИ:
+            запуск  =  False
+    экран.заполнить((255,255,255))
+    all_sprites.draw(экран)
+    pygame.display.flip()
+pygame.quit()
+
+импортировать  numpy  как  np
+matplotlib  импортирует.pyplot  как  plt
+np = x.arange(-20, 10.01, 0.01)
+plt.plot(x, x**2)
+plt.show()
